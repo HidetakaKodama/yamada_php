@@ -24,21 +24,23 @@ if (isset($_SESSION['users'])) {
 }
 if (empty($sql->fetchAll())) {
     if (isset($_SESSION['users'])) {
-        $sql = $pdo->prepare('update customer set name=?, email=?, ' .
-            'password=? where id=?');
+        // $sql = $pdo->prepare('update users set name=?, userid=?, ' .
+        //     'password=? where id=?');
+        $sql = $pdo->prepare('insert into users(name,user_id,password) 
+            values(name=?,user_id=?,password=?)');
         $sql->execute([
-            $_REQUEST['name'], $_REQUEST['email'],
+            $_REQUEST['name'], $_REQUEST['user_id'],
             $_REQUEST['password'], $id
         ]);
         $_SESSION['users'] = [
             'id' => $id, 'name' => $_REQUEST['name'],
-            'email' => $_REQUEST['email'], 'password' => $_REQUEST['password']
+            'user_id' => $_REQUEST['user_id'], 'password' => $_REQUEST['password']
         ];
         echo 'お客様情報を更新しました。';
     } else {
         $sql = $pdo->prepare('insert into users values(null,?,?,?)');
         $sql->execute([
-            $_REQUEST['name'], $_REQUEST['email'],
+            $_REQUEST['name'], $_REQUEST['user_id'],
             $_REQUEST['password']
         ]);
         header('Location: http://yamadashu2.php.xdomain.jp/login/home-input.php');

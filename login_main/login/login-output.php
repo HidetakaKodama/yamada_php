@@ -10,12 +10,12 @@ $pdo = new PDO(
 	'dbdatebase'
 );
 $sql = $pdo->prepare('select * from users where email=? and password=?');
-$sql->execute([$_REQUEST['email'], $_REQUEST['password']]);
+$sql->execute([$_REQUEST['user_id'], $_REQUEST['password']]);
 foreach ($sql as $row) {
 	$_SESSION['users'] = [
 		'id' => $row['id'],
 		'name' => $row['name'],
-		'email' => $row['email'],
+		'user_id' => $row['user_id'],
 		'password' => $row['password'],
 	];
 }

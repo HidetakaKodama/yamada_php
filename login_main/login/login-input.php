@@ -11,8 +11,8 @@
 <body>
     <div id="container">
         <form action="login-output.php" method="post">
-            <p>ログインアドレス</p>
-            <input type="text" name="email"><br>
+            <p>ユーザーID</p>
+            <input type="text" name="user_id"><br>
             <p>パスワード</p>
             <input type="password" name="password"><br>
             <p>

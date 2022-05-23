@@ -1,8 +1,7 @@
 <?php
 
-
-
 require_once(__DIR__ . '/../public/index.php');
+
 ?>
 
 <!DOCTYPE html>
@@ -15,9 +14,10 @@ require_once(__DIR__ . '/../public/index.php');
     <title>ログイン</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
+
 <body>
     <div class="wrapper">
-        
+
     </div>
 </body>
 
