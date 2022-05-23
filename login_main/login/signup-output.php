@@ -43,7 +43,7 @@ if (empty($sql->fetchAll())) {
             $_REQUEST['name'], $_REQUEST['user_id'],
             $_REQUEST['password']
         ]);
-        header('Location: http://yamadashu2.php.xdomain.jp/login/home-input.php');
+        header('Location: http://yamadashu2.php.xdomain.jp/login_main/login/home-input.php');
     }
 } else {
     echo 'ログイン名がすでに使用されていますので、変更してください。';
