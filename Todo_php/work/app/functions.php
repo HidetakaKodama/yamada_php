@@ -51,7 +51,8 @@ function addTodo($pdo)
     return;
   }
 
-  $stmt = $pdo->prepare("INSERT INTO todos (title) VALUES (:title)");
+  $stmt = $pdo->prepare("INSERT INTO todos (title) VALUES (:title);
+                        INSERT INTO todos(user_id) VALUES users(id);");
   $stmt->bindValue('title', $title, PDO::PARAM_STR);
   $stmt->execute();
 }
@@ -59,7 +60,7 @@ function addTodo($pdo)
 function toggleTodo($pdo)
 {
   $id = filter_input(INPUT_POST, 'id');
-  if(empty($id)){
+  if (empty($id)) {
     return;
   }
 
@@ -83,7 +84,8 @@ function deleteTodo($pdo)
 
 function getTodos($pdo)
 {
-  $stmt = $pdo->query("SELECT * FROM todos ORDER BY id DESC");
+  // $stmt = $pdo->query("SELECT * FROM todos ORDER BY id DESC");
+  $stmt = $pdo->query("SELECT * FROM todos WHERE user_id = users.id");
   $todos = $stmt->fetchAll();
   return $todos;
 }

@@ -21,7 +21,7 @@ foreach ($sql as $row) {
 }
 if (isset($_SESSION['users'])) {
 	// echo 'いらっしゃいませ、', $_SESSION['users']['name'], 'さん。';
-	header('Location: http://yamadashu2.php.xdomain.jp/login_main/login/home-input.php');
+	header('Location: http://yamadashu2.php.xdomain.jp/Todo_php/Todo_php/work/public/');
 } else {
 	echo 'ログイン名またはパスワードが違います。';
 }

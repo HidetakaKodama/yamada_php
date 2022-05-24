@@ -23,7 +23,7 @@ echo '<table>';
 echo '<tr><td align="center">お名前</td></tr><tr><td>';
 echo '<input type="text" name="name" value="', $name, '">';
 echo '</td></tr>';
-echo '<tr><td align="center">Eメール</td></tr><tr><td>';
+echo '<tr><td align="center">ユーザーID</td></tr><tr><td>';
 echo '<input type="text" name="user_id" value="', $user_id, '">';
 echo '</td></tr>';
 echo '<tr><td align="center">パスワード</td></tr><tr><td>';
