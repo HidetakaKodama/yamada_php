@@ -12,7 +12,7 @@
     <div id="container">
         <form action="login-output.php" method="post">
             <p>ユーザーID</p>
-            <input type="text" name="user_ID"><br>
+            <input type="text" name="user_id"><br>
             <p>パスワード</p>
             <input type="password" name="password"><br>
             <p>
