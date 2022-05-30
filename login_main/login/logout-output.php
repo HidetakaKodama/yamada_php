@@ -3,10 +3,10 @@
 if (isset($_SESSION['users'])) {
 	unset($_SESSION['users']);
 	//echo 'ログアウトしました。';
-	header('Location: http://localhost/php/login_main/login/login-input.php');
+	header('Location: http://yamadashu2.php.xdomain.jp/login_main/login/login-input.php');
 } else {
 	//echo 'すでにログアウトしています。';
-	header('Location: http://localhost/php/login_main/login/login-input.php');
+	header('Location: http://yamadashu2.php.xdomain.jp/login_main/login/login-input.php');
 }
 ?>
 

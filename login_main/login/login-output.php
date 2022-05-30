@@ -22,7 +22,7 @@ if (isset($_SESSION['users'])) {
 	$userId = $_SESSION['users']['user_id'];
 	setcookie('user_id', $userId, (time() + 1800), '/');
 
-	header('Location: http://yamadashu2.php.xdomain.jp/Todo_php/Todo_php/work/public/');
+	header('Location: http://yamadashu2.php.xdomain.jp/Todo_php/work/public/');
 } else {
 	header('Location: http://yamadashu2.php.xdomain.jp/login_main/login/login-input.php');
 	$alert = "<script type='text/javascript'>alert('ログイン名またはパスワードが違います。');</script>";
