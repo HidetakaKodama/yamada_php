@@ -19,8 +19,15 @@
                 <input type="submit" value="Login" id="btn" onclick="clickBtn()">
                 <!-- <button id="btn">Login</button> -->
         </form>
+
+        <!-- ボタンを押された後、cookieにユーザーIDを登録 -->
+        <script>
+            function clickBtn() {
+                var uid = document.getElementById('user_id').value;
+                document.cookie = uid;
+            }
+        </script>
     </div>
-    <!-- <p id="output-message"></p> -->
 </body>
 
 </html>

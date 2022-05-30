@@ -12,7 +12,7 @@
 <body>
     <?php
     $pdo = new PDO(
-        'mysql:host=localhost;dbname=yamadashu2_main;charset=utf8',
+        'mysql:host=mysql1.php.xdomain.ne.jp;dbname=yamadashu2_main;charset=utf8',
         'yamadashu2_date',
         'dbdatebase'
     );
@@ -25,7 +25,7 @@
         $sql->execute([$_REQUEST['password']]);
     }
 
-    $link_a = 'http://localhost/php/login_main/login/login-input.php';
+    $link_a = 'http://yamadashu2.php.xdomain.jp/login_main/login/login-input.php';
     echo '<br>';
     $link_a_page = 'TODOへ';
     if (empty($sql->fetchAll())) {

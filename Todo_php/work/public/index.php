@@ -2,6 +2,16 @@
 
 require_once(__DIR__ . '/../app/config.php');
 
+$var = $_COOKIE['user_id'];
+
+// if (isset($var)) {
+//   $alert = "<script type='text/javascript'>alert('入っています');</script>";
+//   echo $alert;
+// } else {
+//   $jelart = "<script type='text/javascript'>alert('空っぽです');</script>";
+//   echo $jelart;
+// }
+
 createToken();
 
 $pdo = getPdoInstance();
@@ -49,6 +59,7 @@ $todos = getTodos($pdo);
     <form action="?action=add" method="post">
       <input type="text" name="title" placeholder="Please enter the todo.">
       <input type="hidden" name="token" value="<?= h($_SESSION['token']); ?>">
+      <input type="hidden" name="user_id" value="<?php echo $userId; ?>">
     </form>
 
     <ul>

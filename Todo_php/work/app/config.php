@@ -13,4 +13,10 @@ define('DB_USER', 'yamadashu2_date');
 define('DB_PASS', 'dbdatebase');
 define('SITE_URL', 'http://yamadashu2.php.xdomain.jp/Todo_php/Todo_php/work/public/');
 
+//テストデータベース
+// define('DSN', 'mysql:host=localhost;dbname=yamadashu2_main;charset=utf8mb4');
+// define('DB_USER', 'yamadashu2_date');
+// define('DB_PASS', 'dbdatebase');
+// define('SITE_URL', 'http://localhost/php/Todo_php/work/public/');
+
 require_once(__DIR__ . '/functions.php');
