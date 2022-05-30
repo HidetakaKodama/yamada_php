@@ -7,17 +7,16 @@
     <title>サインアップ</title>
 </head>
 <?php
-$name = $email = $password == '';
-if (isset($_SESSION['user'])) {
-    $name = $_SESSION['user']['name'];
-    $email = $_SESSION['user']['user_id'];
-    $password = $_SESSION['user']['password'];
+$name = $user_id = $password == '';
+if (isset($_SESSION['users'])) {
+    $name = $_SESSION['users']['name'];
+    $user_id = $_SESSION['users']['user_id'];
+    $password = $_SESSION['users']['password'];
 }
 
 ?>
 
 <?php
-echo '<div>';
 echo '<form action="signup-output.php" method="post">';
 echo '<table>';
 echo '<tr><td align="center">お名前</td></tr><tr><td>';
@@ -32,7 +31,6 @@ echo '</td></tr>';
 echo '</table>';
 echo '<input type="submit" value="確定">';
 echo '</form>';
-echo '</div>';
 ?>
 
 </body>

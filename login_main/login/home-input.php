@@ -9,7 +9,7 @@
 
 <body>
     <div>
-        <a href="http://yamadashu2.php.xdomain.jp/Todo_php/Todo_php/work/public/">Todo</a>
+        <a href="http://localhost/php/Todo_php/work/public/">Todo</a>
         <p></p>
         <a href="logout-output.php">ログアウト</a>
     </div>

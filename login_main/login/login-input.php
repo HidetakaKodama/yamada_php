@@ -12,13 +12,15 @@
     <div id="container">
         <form action="login-output.php" method="post">
             <p>ユーザーID</p>
-            <input type="text" name="user_id"><br>
+            <input type="text" value="" id="user_id" name="user_id""><br>
             <p>パスワード</p>
-            <input type="password" name="password"><br>
+            <input type=" password" id="password" name="password"><br>
             <p>
-            <input type="submit" value="Login" id="btn">
+                <input type="submit" value="Login" id="btn" onclick="clickBtn()">
+                <!-- <button id="btn">Login</button> -->
         </form>
     </div>
+    <!-- <p id="output-message"></p> -->
 </body>
 
 </html>
