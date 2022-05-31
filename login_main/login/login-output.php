@@ -1,5 +1,6 @@
 <?php session_start(); ?>
 <?php
+setcookie('user_id', '', (time() - 3600), '/');
 
 unset($_SESSION['users']);
 $pdo = new PDO(
@@ -19,8 +20,9 @@ foreach ($sql as $row) {
 }
 if (isset($_SESSION['users'])) {
 	// echo 'いらっしゃいませ、', $_SESSION['users']['name'], 'さん。';
+	setcookie('user_id', '', (time() - 3600), '/');
 	$userId = $_SESSION['users']['user_id'];
-	setcookie('user_id', $userId, (time() + 1800), '/');
+	setcookie('user_id', $userId, (time() + 180), '/');
 
 	header('Location: http://yamadashu2.php.xdomain.jp/Todo_php/work/public/');
 } else {

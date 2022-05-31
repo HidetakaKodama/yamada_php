@@ -41,6 +41,7 @@
                 'id' => $id, 'name' => $_REQUEST['name'],
                 'user_id' => $_REQUEST['user_id'], 'password' => $_REQUEST['password']
             ];
+
             echo 'お客様情報を登録しました。';
             echo "<a href=" . $link_a . ">" . $link_a_page . "</a>";
         } else {
@@ -49,6 +50,7 @@
                 $_REQUEST['name'], $_REQUEST['user_id'],
                 $_REQUEST['password']
             ]);
+
             echo 'お客様情報を登録しました。';
             echo "<a href=" . $link_a . ">" . $link_a_page . "</a>";
         }

@@ -11,7 +11,7 @@ session_start();
 define('DSN', 'mysql:host=mysql1.php.xdomain.ne.jp;dbname=yamadashu2_main');
 define('DB_USER', 'yamadashu2_date');
 define('DB_PASS', 'dbdatebase');
-define('SITE_URL', 'http://yamadashu2.php.xdomain.jp/Todo_php/Todo_php/work/public/');
+define('SITE_URL', 'http://yamadashu2.php.xdomain.jp/Todo_php/work/public/');
 
 //テストデータベース
 #define('DSN', 'mysql:host=localhost;dbname=yamadashu2_main;charset=utf8mb4');
