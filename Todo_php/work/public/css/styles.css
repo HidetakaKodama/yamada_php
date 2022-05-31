@@ -55,3 +55,8 @@ input[type="checkbox"]{
   margin-left: auto;
   padding-left: 8px;
 }
+
+.logout{
+  color:rgb(210, 208, 208);
+  text-align: right;
+}

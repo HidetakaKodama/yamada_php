@@ -83,6 +83,9 @@ $todos = getTodos($pdo);
         </li>
       <?php endforeach; ?>
     </ul>
+    <p class="logout">
+      <a href="../../../login_main/login/logout-output.php">ログアウト</a>
+    </p>
   </main>
 
   <script src="js/main.js"></script>
