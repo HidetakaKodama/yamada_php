@@ -6,6 +6,11 @@
     <title>ログイン</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="style.css">
+    <script>
+        window.onload = function() {
+            document.cookie = "user_id=; max-age=0";
+        }
+    </script>
 </head>
 
 <body>

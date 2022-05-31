@@ -3,6 +3,8 @@
 
 $userId = $_POST['user_id'];
 
+setcookie('user_id', '', (time() - 3600), '/');
+
 unset($_SESSION['users']);
 $pdo = new PDO(
 	'mysql:host=mysql1.php.xdomain.ne.jp;dbname=yamadashu2_main;charset=utf8',
