@@ -6,16 +6,10 @@
     <title>ログイン</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="style.css">
-    <script>
-        window.addEventListener("load", function() {
-            <?php
-            setcookie("user_id", "", (time() - 3600), "/");
-            ?>;
-        });
-    </script>
+    <script type="text/javascript" src="../js/sub.js"></script>
 </head>
 
-<body>
+<body onload="call()">
     <div id="container">
         <form action="login-output.php" method="post">
             <p>ユーザーID</p>
