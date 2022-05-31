@@ -12,6 +12,8 @@
     </script>
 </head>
 
+
+
 <body>
     <?php
     $name = $user_id = $password = '';
@@ -20,7 +22,6 @@
         $user_id = $_SESSION['users']['user_id'];
         $password = $_SESSION['users']['password'];
     }
-
     ?>
 
     <?php
