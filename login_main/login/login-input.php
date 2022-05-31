@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <script>
         window.onload = function() {
-            document.cookie = "user_id=; max-age=0";
+            <?php
+            setcookie("user_id", "", (time() - 3600), "");
+            ?>;
         }
     </script>
 </head>
