@@ -7,7 +7,7 @@
     <title>サインアップ</title>
 </head>
 <?php
-$name = $user_id = $password == '';
+$name = $user_id = $password = '';
 if (isset($_SESSION['users'])) {
     $name = $_SESSION['users']['name'];
     $user_id = $_SESSION['users']['user_id'];
