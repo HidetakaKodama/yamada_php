@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="style.css">
     <script>
-        window.onload = function() {
+        window.addEventListener("load", function() {
             <?php
-            setcookie("user_id", "", (time() - 3600), "");
+            setcookie("user_id", "", (time() - 3600), "/");
             ?>;
-        }
+        });
     </script>
 </head>
 
