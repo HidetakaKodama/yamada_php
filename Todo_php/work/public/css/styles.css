@@ -56,6 +56,25 @@ input[type="checkbox"]{
   padding-left: 8px;
 }
 
-div{
-  position: absolute; right: 40px;
+input[type=submit]{
+  position: absolute;
+  top:15px; right:15px;
+  width: 100px;
+  padding: 7px;
+  border-radius: 30px;
+  border-width:0px;
+  color: #fff;
+  background: #ef6f5b;
+  box-shadow: 0 2px 0 #a84e40;
+  cursor: pointer; 
+  margin: 0 auto 15px;
+}
+
+input[type=submit]:hover{
+  opacity: 0.8;
+}
+
+.out{
+  position:absolute; 
+  top:10%; right:10%;
 }

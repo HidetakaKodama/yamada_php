@@ -51,17 +51,12 @@ function addTodo($pdo)
     return;
   }
 
-  $stmt = $pdo->prepare("INSERT INTO todos(user_id,title) VALUES (:user_id,:title)");
-  $stmt->bindValue('user_id', $_COOKIE['user_id'], PDO::PARAM_STR);
-  $stmt->bindValue('title', $title, PDO::PARAM_STR);
-  $stmt->execute();
-
-  // $sql = 'INSERT INTO todos (user_id,title) VALUES (?,?)';
-  // $stmt = $pdo->prepare($sql);
-  // $data[] = $_COOKIE['user_id'];
-  // $data[] = $title;
-  // $stmt->execute($data);
-  //$rec = $stmt->fetch(PDO::FETCH_ASSOC);
+  $sql = 'INSERT INTO todos (user_id,title) VALUES (?,?)';
+  $stmt = $pdo->prepare($sql);
+  $data[] = $_COOKIE['user_id'];
+  $data[] = $title;
+  $stmt->execute($data);
+  $rec = $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
 function toggleTodo($pdo)

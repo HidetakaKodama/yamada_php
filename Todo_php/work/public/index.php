@@ -2,17 +2,6 @@
 
 require_once(__DIR__ . '/../app/config.php');
 
-//$var = $_COOKIE['user_id'];
-
-//中身確認
-// if (isset($var)) {
-//   $alert = "<script type='text/javascript'>alert('入っています');</script>";
-//   echo $alert;
-// } else {
-//   $jelart = "<script type='text/javascript'>alert('空っぽです');</script>";
-//   echo $jelart;
-// }
-
 createToken();
 
 $pdo = getPdoInstance();
@@ -85,6 +74,9 @@ $todos = getTodos($pdo);
       <?php endforeach; ?>
     </ul>
   </main>
+  <form action="../../../login_main/login/logout-output.php">
+    <input type="submit" value="Logout" class="out">
+  </form>
 
   <script src="js/main.js"></script>
 </body>
