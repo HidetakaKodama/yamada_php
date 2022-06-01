@@ -57,7 +57,5 @@ input[type="checkbox"]{
 }
 
 div{
-  color:rgb(255, 255, 255);
-  position: absolute;
-top: 40px; right: 40px;
+  position: absolute; right: 40px;
 }

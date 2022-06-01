@@ -10,11 +10,12 @@ body{
 }
 
 form{
-    text-align: center;
+    text-align:center;
 }
 
-input[type=text],
-input[type=password]{
+
+input[type=password],
+input[type=text]{
     padding: 5px;
     border-radius: 4px;
     font-size: 14px;

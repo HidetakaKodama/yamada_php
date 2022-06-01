@@ -7,7 +7,7 @@ if (isset($_SESSION['users'])) {
 		//echo "<script type='text/javascript'>alert('" . $_COOKIE['user_id'] . "');</script>";
 		setcookie('user_id', '', (time() - 3600), '/');
 	} else {
-		echo "<script type='text/javascript'>alert('あ');</script>";
+		echo "<script type='text/javascript'>alert('');</script>";
 	}
 	header('Location: http://yamadashu2.php.xdomain.jp/login_main/login/login-input.php');
 } else {

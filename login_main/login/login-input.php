@@ -19,7 +19,7 @@
             <p>ユーザーID</p>
             <input type="text" value="" id="user_id" name="user_id""><br>
             <p>パスワード</p>
-            <input type=" password" id="password" name="password"><br>
+            <input type="password" value="" id="password" name="password"><br>
             <p>
                 <input type="submit" value="Login" id="btn" onclick="clickBtn()">
         </form>
