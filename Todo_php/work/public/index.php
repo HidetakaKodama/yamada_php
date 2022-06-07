@@ -43,6 +43,27 @@ $todos = getTodos($pdo);
 </head>
 
 <body>
+  <script>
+    window.onload = function() {
+      var arr = getCookieArray();
+      var result = arr["user_id"];
+      if (result === "" || result === null || result === undefined) {
+        window.location.href = "http://yamadashu2.php.xdomain.jp/login_main/login/login-input.php";
+      }
+    }
+
+    function getCookieArray() {
+      var arr = new Array();
+      if (document.cookie != '') {
+        var tmp = document.cookie.split('; ');
+        for (var i = 0; i < tmp.length; i++) {
+          var data = tmp[i].split('=');
+          arr[data[0]] = decodeURIComponent(data[1]);
+        }
+      }
+      return arr;
+    }
+  </script>
   <main>
     <h1>Todos</h1>
 

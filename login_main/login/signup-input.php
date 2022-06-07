@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <title>サインアップ</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script>
         window.onload = function() {
             document.cookie = "user_id=; max-age=0";
@@ -23,23 +23,33 @@
     }
 
     ?>
-
-    <form action="signup-output.php" method="post">
-        <?php
-        echo '<table>';
-        echo '<tr><td align="center">ユーザーネーム</td></tr><tr><td>';
-        echo '<input type="text" name="name" value="', $name, '">';
-        echo '</td></tr>';
-        echo '<tr><td align="center">ユーザーID</td></tr><tr><td>';
-        echo '<input type="text" name="user_id" value="', $user_id, '">';
-        echo '</td></tr>';
-        echo '<tr><td align="center">パスワード</td></tr><tr><td>';
-        echo '<input type="text" name="password" value="', $password, '">';
-        echo '</td></tr>';
-        echo '</table>';
-        echo '<input type="submit" value="sign">';
-        ?>
-    </form>
+    <h2>Sign Up</h2>
+    <p>Please fill this form to create an account.</p>
+    <div class="wrapper">
+        <form action="signup-output.php" method="post">
+            <table>
+                <tr>
+                    <td>User Name</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="name" value="<?php $name; ?>"></td>
+                </tr>
+                <tr>
+                    <td>User ID</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="user_id" value="<?php $user_id; ?>"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="password" value="<?php $password; ?>"></td>
+                </tr>
+            </table>
+            <input type="submit" value="sign">
+        </form>
+    </div>
 </body>
 
 </html>
