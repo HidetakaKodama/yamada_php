@@ -8,6 +8,51 @@ body{
   text-align: center;
 }
 
+
+.loader {
+  align-items: center;
+  background: #fff;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
+.loader::after {
+  -webkit-animation: loader 0.5s linear infinite;
+          animation: loader 0.5s linear infinite;
+  border: 3px solid rgb(235, 152, 85);
+  border-radius: 50%;
+  border-right: 1px solid rgba(255, 165, 0, 0.2);
+  border-top: 1px solid rgba(255, 165, 0, 0.2);
+  content: "";
+  height: 70px;
+  width: 70px;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
 main{
   width:320px;
   margin:32px auto;

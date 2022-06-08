@@ -64,6 +64,9 @@ $todos = getTodos($pdo);
       return arr;
     }
   </script>
+
+  <div id="js-loader" class="loader"></div>
+
   <main>
     <h1>Todos</h1>
 
