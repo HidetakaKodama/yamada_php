@@ -10,7 +10,12 @@ body{
 	font-family: Verdana, sans-serif;
 }
 
-form{
+a {
+    color:rgb(6, 139, 241);
+    text-decoration: none
+}
+
+h2,form{
     width: 280px;
     margin: 30px auto;
     text-align: center;

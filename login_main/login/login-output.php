@@ -21,13 +21,13 @@ foreach ($sql as $row) {
 }
 if (isset($_SESSION['users'])) {
 	// echo 'いらっしゃいませ、', $_SESSION['users']['name'], 'さん。';
-	setcookie('user_id', $userId, (time() + 1800), '/');
+	setcookie('user_id', $userId, (time() + 60 * 60 * 6), '/');
 
 	header('Location: http://yamadashu2.php.xdomain.jp/Todo_php/work/public/');
 } else {
-	header('Location: http://yamadashu2.php.xdomain.jp/login_main/login/login-input.php');
 	$alert = "<script type='text/javascript'>alert('ログイン名またはパスワードが違います。');</script>";
 	echo $alert;
+	header('Location: http://yamadashu2.php.xdomain.jp/login_main/login/login-input.php');
 }
 
 ?>

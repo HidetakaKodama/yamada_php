@@ -14,14 +14,16 @@
 
         }
     </script>
+    <h2>Login</h2>
     <form action="login-output.php" method="post">
-        <p>ユーザーID</p>
+        <p>User ID</p>
         <input type="text" value="" id="user_id" name="user_id""><br>
-        <p>パスワード</p>
+        <p>Password</p>
         <input type="password" value="" id="password" name="password"><br>
         <p></p>
-        <input type="submit" value="Login" id="btn" onclick="clickBtn()">
+        <input type="submit" value="Login" id="btn" onclick="clickBtn()"><br>
         <!-- <button id="btn">Login</button> -->
+        <a href="http://yamadashu2.php.xdomain.jp/login_main/login/signup-input.php">Sign up now</a>
     </form>
 </body>
 
